@@ -1,49 +1,51 @@
-.dashboard-container {
-    padding: 20px;
-    flex: 1; /* Take remaining space */
-    display: flex;
-    flex-direction: column;
-}
+    /*Dashboard CSS*/
+    .dashboard-container {
+        padding: 20px;
+        flex: 1; /* Take remaining space */
+        display: flex;
+        flex-direction: column;
+        background-color: var(--background-color);
+    }
 
-.dashboard-container h1 {
-    font-size: 24px;
-    margin-bottom: 5px;
-    color: #1a202c;
-}
+    .dashboard-container h1 {
+        font-size: 24px;
+        margin-bottom: 5px;
+        color: var(--text-color);
+    }
 
-.dashboard-container .subtitle {
-    font-size: 14px;
-    color: #718096;
-    margin-bottom: 20px;
-}
+    .dashboard-container .subtitle {
+        font-size: 14px;
+        color: #718096;
+        margin-bottom: 20px;
+    }
 
-.dashboard-container .blocks-container {
-    display: flex;
-    gap: 20px;
-    margin-bottom: 20px;
-}
+    .dashboard-container .blocks-container {
+        display: flex;
+        gap: 20px;
+        margin-bottom: 20px;
+    }
 
-.dashboard-container .add-new-block-button {
-    background-color: #3b82f6;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 14px;
-    font-weight: 500;
-    display: flex;
-    align-items: center;
-    align-self: flex-start; /* Align to the start of the container */
-}
+    .dashboard-container .add-new-block-button {
+        background-color: #3b82f6;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        align-self: flex-start; /* Align to the start of the container */
+    }
 
-.dashboard-container .add-new-block-button img {
-    margin-right: 5px;
-    width: 16px;
-    height: 16px;
-    filter: brightness(0) invert(1); /* Invert the color to white */
-}
+    .dashboard-container .add-new-block-button img {
+        margin-right: 5px;
+        width: 16px;
+        height: 16px;
+        filter: brightness(0) invert(1); /* Invert the color to white */
+    }
 
-.dashboard-container .add-new-block-button:hover {
-    background-color: #2563eb;
-}
+    .dashboard-container .add-new-block-button:hover {
+        background-color: #2563eb;
+    }

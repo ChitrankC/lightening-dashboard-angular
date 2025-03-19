@@ -1,13 +1,14 @@
-/* You can add global styles to this file, and also import other style files */
-/* You can add global styles to this file, and also import other style files */
 :root {
     --primary-color: #3b82f6;
-    --background-color: #f0f2f5;
+    --background-color: #f0f2f5; /* Overall Background */
     --text-color: #1a202c;
-    --navbar-background-color: white;
+    --navbar-background-color: #FFFFFF; /* Slightly darker navbar */
+    --sidebar-background-color: #F5F7FA;/*Brighten the sidebar*/
     --search-border-color: #e2e8f0;
     --search-background-color: white;
     --spinner-border: #e2e8f0;
+    --lighting-block-background-color: #ffffff; /* default background for lighting blocks*/
+    --lighting-block-text-color: #4a5568;
 }
 
 body {
@@ -22,9 +23,12 @@ body.dark-theme {
     --background-color: #1a202c;
     --text-color: #edf2f7;
     --navbar-background-color: #2d3748;
+    --sidebar-background-color: #2d3748;/*darken the sidebar*/
     --search-border-color: #4a5568;
     --search-background-color: #2d3748;
     --spinner-border: #4a5568;
+    --lighting-block-background-color: #2d3748;/* dark background for lighting blocks*/
+    --lighting-block-text-color: #edf2f7;
 }
 
 /* Reset default margins/padding */

@@ -1,6 +1,7 @@
 <div class="sidebar">
     <div class="logo">
         <img src="assets/lumina-logo.svg" alt="Lumina Logo">
+        SenseLive
     </div>
     <ul class="nav-items">
         <li class="nav-item" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
@@ -24,16 +25,17 @@
             Settings
         </li>
     </ul>
-
-    <div class="user-profile">
-        <div class="user-avatar">AU</div>
-        <div class="user-info">
-            Admin User
-            <div class="user-email">admin.com</div>
+    <div class="bottom-section">
+        <div class="user-profile">
+            <div class="user-avatar">AU</div>
+            <div class="user-info">
+                Admin User
+                <div class="user-email">admin.com</div>
+            </div>
         </div>
-    </div>
-    <div class="refresh-session" (click)="refreshSession()">
-        <img src="assets/refresh-icon.svg" alt="Refresh Icon">
-        Refresh Session
+        <div class="refresh-session" (click)="refreshSession()">
+            <img src="assets/refresh-icon.svg" alt="Refresh Icon">
+            Refresh Session
+        </div>
     </div>
 </div>

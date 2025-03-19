@@ -1,11 +1,12 @@
 .lighting-block {
-    background-color: white;
+    background-color: var(--lighting-block-background-color);
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
     padding: 15px;
     width: 300px; /* Fixed width for consistent layout */
     display: flex;
     flex-direction: column;
+    color:  var(--lighting-block-text-color);
 }
 
 .lighting-block .header {
@@ -18,7 +19,7 @@
 .lighting-block .header .title {
     font-size: 16px;
     font-weight: 500;
-    color: #1a202c;
+    color: var(--lighting-block-text-color);
     display: flex;
     align-items: center;
 }

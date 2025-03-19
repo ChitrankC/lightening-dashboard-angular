@@ -8,12 +8,24 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
-.navbar .search-bar {
-    position: relative;
-    width: 300px;
+.navbar .title {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--text-color); /* Use variable for theme */
 }
 
-.navbar .search-bar input {
+.navbar .actions {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .actions .search-bar {
+    position: relative;
+    width: 300px;
+    margin-right: 20px; /* Add spacing between search bar and other icons */
+}
+
+.navbar .actions .search-bar input {
     width: 100%;
     padding: 8px 30px 8px 12px;
     border: 1px solid var(--search-border-color);
@@ -24,11 +36,11 @@
     color: var(--text-color);
 }
 
-.navbar .search-bar input:focus {
+.navbar .actions .search-bar input:focus {
     border-color: #3b82f6;
 }
 
-.navbar .search-bar .search-icon {
+.navbar .actions .search-bar .search-icon {
     position: absolute;
     right: 10px;
     top: 50%;
@@ -36,11 +48,6 @@
     width: 16px;
     height: 16px;
     opacity: 0.5;
-}
-
-.navbar .actions {
-    display: flex;
-    align-items: center;
 }
 
 .navbar .actions button {

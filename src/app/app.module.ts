@@ -10,6 +10,7 @@ import { DashboardComponent } from './component/dashboard/dashboard.component';
 import { LightingBlockComponent } from './component/lighting-block/lighting-block.component';
 import { LightsComponent } from './component/lights/lights.component';
 import { LoadingComponent } from './component/loading/loading.component';
+import { BlockManagementComponent } from './component/block-management/block-management.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { LoadingComponent } from './component/loading/loading.component';
     DashboardComponent,
     LightingBlockComponent,
     LightsComponent,
-    LoadingComponent
+    LoadingComponent,
+    BlockManagementComponent
   ],
   imports: [
     BrowserModule,
