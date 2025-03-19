@@ -1,0 +1,16 @@
+<div class="navbar">
+    <div class="search-bar">
+        <input type="text" placeholder="Search...">
+        <img src="assets/search-icon.svg" alt="Search Icon" class="search-icon">
+    </div>
+    <div class="actions">
+        <button class="theme-toggle" (click)="toggleTheme()">
+            <img *ngIf="isDarkMode" src="assets/sun.svg" alt="Light Mode">
+            <img *ngIf="!isDarkMode" src="assets/moon.svg" alt="Dark Mode">
+        </button>
+        <button class="notification-button">
+            <img src="assets/bell.svg" alt="Notification Icon" class="notification-icon">
+            <span class="notification-badge">2</span>
+        </button>
+    </div>
+</div>

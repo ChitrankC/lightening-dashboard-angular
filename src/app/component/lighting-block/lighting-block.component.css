@@ -1,0 +1,117 @@
+.lighting-block {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    padding: 15px;
+    width: 300px; /* Fixed width for consistent layout */
+    display: flex;
+    flex-direction: column;
+}
+
+.lighting-block .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.lighting-block .header .title {
+    font-size: 16px;
+    font-weight: 500;
+    color: #1a202c;
+    display: flex;
+    align-items: center;
+}
+
+.lighting-block .header .title img {
+    margin-right: 5px;
+    width: 16px;
+    height: 16px;
+}
+
+.lighting-block .header .actions {
+    cursor: pointer;
+}
+
+.lighting-block .header .actions img {
+    width: 20px;
+    height: 20px;
+    opacity: 0.7;
+}
+
+.lighting-block .header .actions img:hover {
+    opacity: 1;
+}
+
+.lighting-block .location {
+    font-size: 14px;
+    color: #718096;
+    margin-bottom: 15px;
+}
+
+.lighting-block .lights-status {
+    font-size: 14px;
+    color: #4a5568;
+    margin-bottom: 10px;
+}
+
+.lighting-block .schedule {
+    font-size: 12px;
+    color: #718096;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.lighting-block .schedule img {
+    margin-right: 5px;
+    width: 14px;
+    height: 14px;
+}
+
+.lighting-block .power-status {
+    font-size: 12px;
+    color: #718096;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    background-color: #edf2f7;
+    color: #4a5568;
+    border-radius: 6px;
+    padding: 8px 12px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 500;
+    border: none;
+}
+
+.lighting-block .power-status img {
+    margin-right: 5px;
+    width: 14px;
+    height: 14px;
+}
+
+.lighting-block .power-status.powered-on {
+    color: #2f855a;
+}
+
+.lighting-block .power-status:hover {
+    background-color: #e2e8f0;
+}
+
+.lighting-block .view-lights {
+    background-color: #edf2f7;
+    color: #4a5568;
+    border-radius: 6px;
+    padding: 8px 12px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 500;
+    border: none;
+}
+
+.lighting-block .view-lights:hover {
+    background-color: #e2e8f0;
+}

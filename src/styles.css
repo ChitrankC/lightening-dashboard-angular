@@ -1,1 +1,42 @@
 /* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+:root {
+    --primary-color: #3b82f6;
+    --background-color: #f0f2f5;
+    --text-color: #1a202c;
+    --navbar-background-color: white;
+    --search-border-color: #e2e8f0;
+    --search-background-color: white;
+    --spinner-border: #e2e8f0;
+}
+
+body {
+    font-family: sans-serif; /* Or your preferred font */
+    font-size: 14px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-theme {
+    --background-color: #1a202c;
+    --text-color: #edf2f7;
+    --navbar-background-color: #2d3748;
+    --search-border-color: #4a5568;
+    --search-background-color: #2d3748;
+    --spinner-border: #4a5568;
+}
+
+/* Reset default margins/padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Add global styles for icons */
+.nav-item img, .lighting-block img {
+  width: 20px; /* Adjust as needed */
+  height: 20px;
+  margin-right: 5px; /* Spacing between icon and text */
+}

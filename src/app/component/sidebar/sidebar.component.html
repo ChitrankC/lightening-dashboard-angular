@@ -1,0 +1,39 @@
+<div class="sidebar">
+    <div class="logo">
+        <img src="assets/lumina-logo.svg" alt="Lumina Logo">
+    </div>
+    <ul class="nav-items">
+        <li class="nav-item" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+            <img src="assets/house.svg" alt="Dashboard Icon">
+            Dashboard
+        </li>
+        <li class="nav-item" routerLink="/block-management" routerLinkActive="active">
+            <img src="assets/cubes.svg" alt="Block Icon">
+            Block Management
+        </li>
+        <li class="nav-item" routerLink="/analytics" routerLinkActive="active">
+            <img src="assets/chart-line.svg" alt="Analytics Icon">
+            Analytics
+        </li>
+        <li class="nav-item" routerLink="/user-management" routerLinkActive="active">
+            <img src="assets/users.svg" alt="User Icon">
+            User Management
+        </li>
+        <li class="nav-item" routerLink="/settings" routerLinkActive="active">
+            <img src="assets/gear.svg" alt="Settings Icon">
+            Settings
+        </li>
+    </ul>
+
+    <div class="user-profile">
+        <div class="user-avatar">AU</div>
+        <div class="user-info">
+            Admin User
+            <div class="user-email">admin.com</div>
+        </div>
+    </div>
+    <div class="refresh-session" (click)="refreshSession()">
+        <img src="assets/refresh-icon.svg" alt="Refresh Icon">
+        Refresh Session
+    </div>
+</div>

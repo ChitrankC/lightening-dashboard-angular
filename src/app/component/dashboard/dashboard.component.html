@@ -1,0 +1,12 @@
+<div class="dashboard-container">
+    <h1>Lighting Blocks</h1>
+    <p class="subtitle">Manage your lighting blocks and zones</p>
+    <div class="blocks-container">
+        <app-lighting-block [building]="'Building A'" [location]="'North Wing, Floor 1'" [lightsOn]="7" [totalLights]="30" [schedule]="'08:00 - 18:00'" [powerState]="buildingAState" (powerStateChanged)="onPowerStateChanged('buildingA', $event)" [viewLights]="'/lights/buildingA'"></app-lighting-block>
+        <app-lighting-block [building]="'Building B'" [location]="'South Wing, Floor 2'" [lightsOn]="0" [totalLights]="30" [schedule]="'Not scheduled'" [powerState]="buildingBState" (powerStateChanged)="onPowerStateChanged('buildingB', $event)" [viewLights]="'/lights/buildingB'"></app-lighting-block>
+    </div>
+    <button class="add-new-block-button">
+        <img src="assets/add-icon.svg" alt="Add Icon">
+        Add New Block
+    </button>
+</div>

@@ -1,0 +1,22 @@
+<div class="lighting-block">
+    <div class="header">
+        <div class="title">
+            <img src="assets/building.svg" alt="Building Icon">
+            {{ building }}
+        </div>
+        <div class="actions">
+            <img src="assets/menu-icon.svg" alt="Menu Icon">
+        </div>
+    </div>
+    <div class="location">{{ location }}</div>
+    <div class="lights-status">{{ lightsOn }} / {{ totalLights }} lights on</div>
+    <div class="schedule">
+        <img src="assets/clock-icon.svg" alt="Clock Icon">
+        {{ schedule }}
+    </div>
+    <button class="power-status" [ngClass]="{'powered-on': powerState === 'Powered On'}" (click)="togglePower()">
+        <img src="assets/power-icon.svg" alt="Power Icon">
+        {{ powerState }}
+    </button>
+    <button class="view-lights" (click)="goToLights()">View Lights</button>
+</div>

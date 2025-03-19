@@ -1,0 +1,81 @@
+.navbar {
+    background-color: var(--navbar-background-color);
+    height: 60px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.navbar .search-bar {
+    position: relative;
+    width: 300px;
+}
+
+.navbar .search-bar input {
+    width: 100%;
+    padding: 8px 30px 8px 12px;
+    border: 1px solid var(--search-border-color);
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+    background-color: var(--search-background-color);
+    color: var(--text-color);
+}
+
+.navbar .search-bar input:focus {
+    border-color: #3b82f6;
+}
+
+.navbar .search-bar .search-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    opacity: 0.5;
+}
+
+.navbar .actions {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .actions button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin-left: 20px;
+    cursor: pointer;
+    position: relative; /* For the badge */
+}
+
+.navbar .actions button img {
+    width: 24px;
+    height: 24px;
+    opacity: 0.7;
+    transition: opacity 0.2s ease; /* Smooth transition */
+}
+
+.navbar .actions button img:hover {
+    opacity: 1;
+}
+
+.navbar .actions button.notification-button .notification-badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: red;
+    color: white;
+    font-size: 10px;
+    padding: 2px 5px;
+    border-radius: 50%;
+}
+
+.theme-toggle:hover img,
+.notification-button:hover img {
+  transform: scale(1.1); /* slight zoom on hover */
+  transition: transform 0.2s ease-in-out; /* smooth transition */
+}
